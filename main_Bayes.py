@@ -29,7 +29,7 @@ from utils.BayesianModels.Bayesian3Conv3FC import BBB3Conv3FC
 from utils.BayesianModels.BayesianAlexNet import BBBAlexNet
 from utils.BayesianModels.BayesianLeNet import BBBLeNet
 from utils.BayesianModels.BayesianSqueezeNet import BBBSqueezeNet
-
+from datasets import Dataset
 
 parser = argparse.ArgumentParser(description='PyTorch Bayesian Model Training')
 #parser.add_argument('--lr', default=0.001, type=float, help='learning_rate')
@@ -41,7 +41,7 @@ parser.add_argument('--net_type', default='lenet', type=str, help='model')
 #parser.add_argument('--p_logvar_init', default=0, type=int, help='p_logvar_init')
 #parser.add_argument('--q_logvar_init', default=-10, type=int, help='q_logvar_init')
 #parser.add_argument('--weight_decay', default=0.0005, type=float, help='weight_decay')
-parser.add_argument('--dataset', default='CIFAR10', type=str, help='dataset = [MNIST/CIFAR10/CIFAR100]')
+parser.add_argument('--dataset', default='cifar10', type=str, help='dataset = [mnist/fmnist/kmnist/cifar10/cifar100]')
 parser.add_argument('--resume', '-r', action='store_true', help='resume from checkpoint')
 parser.add_argument('--testOnly', '-t', action='store_true', help='Test mode with the saved model')
 args = parser.parse_args()
@@ -55,46 +55,24 @@ resize=32
 # Data Uplaod
 print('\n[Phase 1] : Data Preparation')
 
-transform_train = transforms.Compose([
-    transforms.Resize((resize, resize)),
-    transforms.RandomCrop(32, padding=4),
-    #transforms.RandomHorizontalFlip(),
-    #CIFAR10Policy(),
-    transforms.ToTensor(),
-    transforms.Normalize(cf.mean[args.dataset], cf.std[args.dataset]),
-])  # meanstd transformation
-
-transform_test = transforms.Compose([
-    transforms.Resize((resize, resize)),
-    transforms.RandomCrop(32, padding=4),
-    #transforms.RandomHorizontalFlip(),
-    #CIFAR10Policy(),
-    transforms.ToTensor(),
-    transforms.Normalize(cf.mean[args.dataset], cf.std[args.dataset]),
-])
 
 
+dataset_name = args.dataset
 
-print("| Preparing {} dataset...".format(args.dataset))
-dataset_prep = 'torchvision.datasets.{}'.format(args.dataset)
-trainset = dataset_prep(root='./data', train=True, download=True, transform=transform_train)
-testset = dataset_prep(root='./data', train=False, download=False, transform=transform_test)
-
-
-if (dataset_name == 'CIFAR10'):
+if (dataset_name == 'cifar10'):
     outputs = 10
     inputs = 3
 
-elif (dataset_name == 'CIFAR100'):
+elif (dataset_name == 'cifar100'):
     outputs = 100
     inputs = 3
 
-elif (dataset_name == 'MNIST'):
+elif (dataset_name == 'mnist'):
     outputs = 10
     inputs = 1
-
-trainloader = torch.utils.data.DataLoader(trainset, batch_size=cf.batch_size, shuffle=True, num_workers=4)
-testloader = torch.utils.data.DataLoader(testset, batch_size=cf.batch_size, shuffle=False, num_workers=4)
+data = Dataset(dataset_name)
+trainloader = data.get_train_loader(batch_size=cf.batch_size, shuffle=True)
+testloader = data.get_test_loader(batch_size=cf.batch_size, shuffle=False)
 
 
 
@@ -150,7 +128,7 @@ def train(epoch):
     optimizer = optim.Adam(net.parameters(), lr=cf.learning_rate(cf.lr, epoch), weight_decay=cf.weight_decay)
 
     print('\n=> Training Epoch #%d, LR=%.4f' %(epoch, cf.learning_rate(cf.lr, epoch)))
-    m = math.ceil(len(trainset) / cf.batch_size)
+    m = math.ceil(len(trainloader.dataset) / cf.batch_size)
     for batch_idx, (inputs_value, targets) in enumerate(trainloader):
 
         x = inputs_value.view(-1, inputs, resize, resize).repeat(cf.num_samples, 1, 1, 1)
@@ -173,8 +151,8 @@ def train(epoch):
         optimizer.zero_grad()
         loss.backward()  # Backward Propagation
         optimizer.step() # Optimizer update
-
-        train_loss += loss.data[0]
+        loss = loss.detach()
+        train_loss += loss.item()
         _, predicted = torch.max(outputs.data, 1)
         total += targets.size(0)
         correct += predicted.eq(y.data).cpu().sum()
@@ -182,10 +160,10 @@ def train(epoch):
         sys.stdout.write('\r')
         sys.stdout.write('| Epoch [%3d/%3d] Iter[%3d/%3d]\t\tLoss: %.4f Acc@1: %.3f%%'
                 %(epoch, cf.num_epochs, batch_idx+1,
-                    (len(trainset)//cf.batch_size)+1, loss.data[0], (100*correct/total)/cf.num_samples))
+                    (len(trainloader.dataset)//cf.batch_size)+1, loss.item(), (100*correct/total)/cf.num_samples))
         sys.stdout.flush()
 
-    diagnostics_to_write =  {'Epoch': epoch, 'Loss': loss.data[0], 'Accuracy': (100*correct/total)/cf.num_samples}
+    diagnostics_to_write =  {'Epoch': epoch, 'Loss': loss.item(), 'Accuracy': (100*correct/total)/cf.num_samples}
     with open(logfile, 'a') as lf:
         lf.write(str(diagnostics_to_write))
 
@@ -196,7 +174,7 @@ def test(epoch):
     correct = 0
     total = 0
     conf=[]
-    m = math.ceil(len(testset) / cf.batch_size)
+    m = math.ceil(len(testloader.dataset) / cf.batch_size)
     for batch_idx, (inputs_value, targets) in enumerate(testloader):
         x = inputs_value.view(-1, inputs, resize, resize).repeat(cf.num_samples, 1, 1, 1)
         y = targets.repeat(cf.num_samples)
@@ -215,9 +193,9 @@ def test(epoch):
         else:
             beta = 0
 
-        loss = vi(outputs,y,kl,beta)
+        loss = vi(outputs,y,kl,beta).detach()
 
-        test_loss += loss.data[0]
+        test_loss += loss.item()
         _, predicted = torch.max(outputs.data, 1)
         preds = F.softmax(outputs, dim=1)
         #print(preds)
@@ -225,8 +203,7 @@ def test(epoch):
         #print(results[0][0].item())
         conf.append(results[0][0].item())
         total += targets.size(0)
-        correct += preds
-        dicted.eq(y.data).cpu().sum()
+        correct += predicted.eq(y.data).cpu().sum()
 
     # Save checkpoint when best model
     #print (conf)
@@ -256,8 +233,8 @@ def test(epoch):
     print('--------------------')
     """
     acc =(100*correct/total)/cf.num_samples
-    print("\n| Validation Epoch #%d\t\t\tLoss: %.4f Acc@1: %.2f%%" %(epoch, loss.data[0], acc))
-    test_diagnostics_to_write = {'Validation Epoch':epoch, 'Loss':loss.data[0], 'Accuracy': acc}
+    print("\n| Validation Epoch #%d\t\t\tLoss: %.4f Acc@1: %.2f%%" %(epoch, loss.item(), acc))
+    test_diagnostics_to_write = {'Validation Epoch':epoch, 'Loss':loss.item(), 'Accuracy': acc}
     values_to_write={'Epoch':epoch, 'Confidence Mean: ':confidence_mean, 'Confidence Variance:':confidence_var, 'Epistemic Uncertainity: ': epistemic, 'Aleatoric Uncertainity: ':aleatoric}
     with open(logfile, 'a') as lf:
         lf.write(str(test_diagnostics_to_write))
@@ -289,7 +266,8 @@ for epoch in range(cf.start_epoch, cf.start_epoch+cf.num_epochs):
     start_time = time.time()
 
     train(epoch)
-    test(epoch)
+    with torch.no_grad():
+        test(epoch)
 
     epoch_time = time.time() - start_time
     elapsed_time += epoch_time

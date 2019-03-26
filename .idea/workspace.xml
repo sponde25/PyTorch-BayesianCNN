@@ -2,47 +2,116 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c93a7d31-0a9c-437e-9b67-c891f328587d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/bayesian_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/bayesian_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_Bayes.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_Bayes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_nonBayes.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_nonBayes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/PyTorch-BayesianCNN.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PyTorch-BayesianCNN.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/Bayesian_CNN_Detailed.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/Frequentist_CNN.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/bayesian_config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/extraction/extract_acc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/extraction/extract_beta.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/extraction/extract_loss.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/extraction/plot_uncertainity.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/figures/BayesCNNwithdist.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/figures/CIFAR100Table.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/figures/CIFAR10MNISTTable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/figures/CNNwithdist_git.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/figures/Uncertainty.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/main_Bayes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/main_nonBayes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/results/cifar10/diagnostics_Bayesalexnet_cifar10_25.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/results/cifar10/diagnostics_Bayeslenet_cifar10_25.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/results/cifar10/diagnostics_NonBayesalexnet_cifar10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/results/cifar10/diagnostics_NonBayeslenet_cifar10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/results/cifar100/diagnostics_Bayesalexnet_cifar100_100.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/results/cifar100/diagnostics_Bayesalexnet_cifar100_25.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/results/cifar100/diagnostics_Bayesalexnet_cifar100_25_vertical_flip.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/results/cifar100/diagnostics_Bayesalexnet_cifar100_50.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/results/cifar100/diagnostics_Bayeslenet_cifar100_25.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/results/cifar100/diagnostics_NonBayes_alexnet_cifar100_2_dropout.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/results/cifar100/diagnostics_NonBayesalexnet_cifar100_1_dropout.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/results/cifar100/diagnostics_NonBayesalexnet_cifar100_with_dropout.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/results/cifar100/diagnostics_NonBayesalexnet_cifar100_without_dropout.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/results/cifar100/diagnostics_NonBayeslenet_cifar100.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/results/mnist/diagnostics_Bayesalexnet_mnist.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/results/mnist/diagnostics_Bayeslenet_mnist.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/results/mnist/diagnostics_NonBayesalexnet_mnist.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/results/mnist/diagnostics_NonBayeslenet_mnist.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/results/plots/results_cifar10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/results/plots/results_cifar100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/results/plots/results_mnist.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/results/plots/results_train_test_cifar100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/utils/BBBdistributions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/utils/BBBlayers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/utils/BayesianDataParallel/BBBDataParallel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/utils/BayesianDataParallel/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/utils/BayesianDataParallel/_functions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/utils/BayesianDataParallel/backends/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/utils/BayesianDataParallel/backends/backend.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/utils/BayesianDataParallel/backends/thnn.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/utils/BayesianDataParallel/module.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/utils/BayesianDataParallel/parallel_apply.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/utils/BayesianDataParallel/parameter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/utils/BayesianDataParallel/replicate.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/utils/BayesianDataParallel/scatter_gather.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/utils/BayesianModels/Bayesian3Conv3FC.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/utils/BayesianModels/BayesianAlexNet.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/utils/BayesianModels/BayesianELUN1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/utils/BayesianModels/BayesianELUN2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/utils/BayesianModels/BayesianExperimentalCNNModel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/utils/BayesianModels/BayesianLeNet.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/utils/BayesianModels/BayesianResNet.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/utils/BayesianModels/BayesianSqueezeNet.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/utils/NonBayesianModels/AlexNet.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/utils/NonBayesianModels/ELUN1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/utils/NonBayesianModels/ELUN2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/utils/NonBayesianModels/ExperimentalCNNModel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/utils/NonBayesianModels/LeNet.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/utils/NonBayesianModels/SqueezeNet.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/utils/NonBayesianModels/ThreeConvThreeFC.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/utils/NonBayesianModels/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/utils/NonBayesianModels/resnet.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/utils/NonBayesianModels/wide_resnet.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/utils/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image Recognition/utils/autoaugment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Paper/BayesianCNN-with-VariationalInference.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Super Resolution/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Super Resolution/data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Super Resolution/dataset.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Super Resolution/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Super Resolution/model.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Super Resolution/out.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Super Resolution/scrape_google_search_images.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Super Resolution/super_resolve.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thesis/thesis.pdf" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/PyTorch_BayesianCNN$main_NonBayes.coverage" NAME="main_NonBayes Coverage Results" MODIFIED="1534367393164" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PyTorch_BayesianCNN$extract_loss.coverage" NAME="extract_loss Coverage Results" MODIFIED="1535922924413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/extraction" />
-    <SUITE FILE_PATH="coverage/PyTorch_BayesianCNN$bayesian_config.coverage" NAME="bayesian_config Coverage Results" MODIFIED="1538868311521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PyTorch_BayesianCNN$acc_architecture.coverage" NAME="acc_architecture Coverage Results" MODIFIED="1535923303927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/extraction" />
-    <SUITE FILE_PATH="coverage/PyTorch_BayesianCNN$loss_different_lr.coverage" NAME="loss_different_lr Coverage Results" MODIFIED="1535923457970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/extraction" />
     <SUITE FILE_PATH="coverage/PyTorch_BayesianCNN$extract_acc.coverage" NAME="extract_acc Coverage Results" MODIFIED="1535922451100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/extraction" />
+    <SUITE FILE_PATH="coverage/PyTorch_BayesianCNN$acc_architecture.coverage" NAME="acc_architecture Coverage Results" MODIFIED="1535923303927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/extraction" />
+    <SUITE FILE_PATH="coverage/PyTorch_BayesianCNN$main_Bayes.coverage" NAME="main_Bayes Coverage Results" MODIFIED="1553577422363" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PyTorch_BayesianCNN$main_nonBayes.coverage" NAME="main_nonBayes Coverage Results" MODIFIED="1539530996629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PyTorch_BayesianCNN$main_Bayes.coverage" NAME="main_Bayes Coverage Results" MODIFIED="1539540024691" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PyTorch_BayesianCNN$extract_loss.coverage" NAME="extract_loss Coverage Results" MODIFIED="1535922924413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/extraction" />
+    <SUITE FILE_PATH="coverage/PyTorch_BayesianCNN$main_NonBayes.coverage" NAME="main_NonBayes Coverage Results" MODIFIED="1534367393164" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PyTorch_BayesianCNN$loss_different_lr.coverage" NAME="loss_different_lr Coverage Results" MODIFIED="1535923457970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/extraction" />
+    <SUITE FILE_PATH="coverage/PyTorch_BayesianCNN$bayesian_config.coverage" NAME="bayesian_config Coverage Results" MODIFIED="1538868311521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Bayesian3Conv3FC.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/BayesianModels/Bayesian3Conv3FC.py">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main_Bayes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="51" column="18" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main_nonBayes.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main_nonBayes.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="28" column="76" selection-start-line="28" selection-start-column="76" selection-end-line="28" selection-end-column="76" />
+            <state relative-caret-position="683">
+              <caret line="102" column="19" lean-forward="true" selection-start-line="102" selection-start-column="19" selection-end-line="102" selection-end-column="19" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -50,53 +119,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AlexNet.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/NonBayesianModels/AlexNet.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="58" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bayesian_config.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bayesian_config.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.py" pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="479">
-              <caret line="40" column="18" lean-forward="true" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main_Bayes.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main_Bayes.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BayesianResNet.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/BayesianModels/BayesianResNet.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1320">
-              <caret line="88" column="38" selection-start-line="88" selection-start-column="38" selection-end-line="88" selection-end-column="38" />
-              <folding>
-                <element signature="e#0#12#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="116">
+              <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -146,26 +173,19 @@
         <option value="$PROJECT_DIR$/utils/NonBayesianModels/AlexNet.py" />
         <option value="$PROJECT_DIR$/utils/NonBayesianModels/LeNet.py" />
         <option value="$PROJECT_DIR$/utils/NonBayesianModels/ThreeConvThreeFC.py" />
-        <option value="$PROJECT_DIR$/config.py" />
         <option value="$PROJECT_DIR$/main_nonBayes.py" />
+        <option value="$PROJECT_DIR$/datasets" />
+        <option value="$PROJECT_DIR$/datasets.py" />
         <option value="$PROJECT_DIR$/main_Bayes.py" />
+        <option value="$PROJECT_DIR$/config.py" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="65" />
-    <option name="y" value="-4" />
-    <option name="width" value="1855" />
-    <option name="height" value="1084" />
+    <option name="x" value="960" />
+    <option name="y" value="510" />
+    <option name="width" value="1845" />
+    <option name="height" value="1130" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -179,17 +199,6 @@
             <path>
               <item name="PyTorch-BayesianCNN" type="b2602c69:ProjectViewProjectNode" />
               <item name="PyTorch-BayesianCNN" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PyTorch-BayesianCNN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PyTorch-BayesianCNN" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PyTorch-BayesianCNN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PyTorch-BayesianCNN" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="NonBayesianModels" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -240,6 +249,9 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="bayesian_config" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PyTorch-BayesianCNN" />
@@ -259,6 +271,9 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="loss_different_lr" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PyTorch-BayesianCNN" />
@@ -278,6 +293,9 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="main_Bayes" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PyTorch-BayesianCNN" />
@@ -286,9 +304,9 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda3/envs/torch/bin/python" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
@@ -297,6 +315,9 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="main_nonBayes" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PyTorch-BayesianCNN" />
@@ -316,6 +337,9 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Python.acc_architecture" />
@@ -344,6 +368,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1533674567661</updated>
+      <workItem from="1553506385969" duration="6234000" />
     </task>
     <task id="LOCAL-00001" summary="Batch size 16 takes 11GB GPU">
       <created>1533675052999</created>
@@ -467,60 +492,61 @@
     <option name="localTasksCounter" value="18" />
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="6234000" />
+  </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <frame x="134" y="-20" width="3706" height="2180" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info anchor="bottom" id="TODO" order="12" />
-      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="8" visible="true" weight="0.32948583" />
-      <window_info anchor="bottom" id="Version Control" order="1" />
-      <window_info anchor="bottom" id="Python Console" order="3" />
-      <window_info anchor="bottom" id="Terminal" order="4" weight="0.32843652" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.2238806" />
-      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="2" />
-      <window_info anchor="right" id="SciView" order="0" />
-      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.2498618" />
-      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.22636816" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="1" />
+      <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Python Console" order="3" />
+      <window_info anchor="bottom" id="Terminal" order="4" weight="0.32810867" />
+      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.32967606" />
+      <window_info anchor="bottom" id="Run" order="8" visible="true" weight="0.3291536" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.39968652" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="7" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="12" />
+      <window_info anchor="right" id="SciView" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Database" order="2" />
+      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.2498618" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.2498618" />
-      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.25538972" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="12" />
-      <window_info active="true" anchor="bottom" id="Run" order="8" visible="true" weight="0.32948583" />
-      <window_info anchor="bottom" id="Message" order="6" />
-      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
-      <window_info anchor="right" id="Database" order="2" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="1" />
+      <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Python Console" order="3" />
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.32948583" />
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="1" />
-      <window_info anchor="right" id="SciView" order="0" />
+      <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Find" order="7" />
-      <window_info anchor="bottom" id="Python Console" order="3" />
+      <window_info active="true" anchor="bottom" id="Run" order="8" visible="true" weight="0.32948583" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="12" />
+      <window_info anchor="right" id="SciView" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Database" order="2" />
+      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.2498618" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Batch size 16 takes 11GB GPU" />
@@ -543,377 +569,79 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main_Bayes.py</url>
+          <line>154</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/utils/BBBdistributions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/BBBlayers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3945">
-          <caret line="263" selection-start-line="263" selection-end-line="263" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main_Bayes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2250">
-          <caret line="178" lean-forward="true" selection-start-line="178" selection-end-line="178" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/NonBayesianModels/resnet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main_Bayes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="55" column="26" lean-forward="true" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/BBBdistributions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/BBBlayers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3945">
-          <caret line="263" lean-forward="true" selection-start-line="263" selection-end-line="263" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/NonBayesianModels/resnet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/NonBayesianModels/resnet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="40" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/NonBayesianModels/LeNet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="29" column="19" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/NonBayesianModels/resnet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="40" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/NonBayesianModels/LeNet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="29" column="19" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main_Bayes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/BayesianModels/BayesianAlexNet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main_Bayes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/BayesianModels/BayesianAlexNet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main_Bayes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/NonBayesianModels/AlexNet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/NonBayesianModels/LeNet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="6" column="35" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/NonBayesianModels/SqueezeNet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="62" selection-start-line="62" selection-end-line="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main_NonBayes.py" />
-    <entry file="file://$PROJECT_DIR$/main_Bayes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/NonBayesianModels/SqueezeNet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="62" selection-start-line="62" selection-end-line="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main_NonBayes.py" />
-    <entry file="file://$PROJECT_DIR$/utils/NonBayesianModels/SqueezeNet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="811">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/BayesianModels/BayesianELUN1.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/NonBayesianModels/SqueezeNet.py" />
+    <entry file="file://$PROJECT_DIR$/utils/BayesianModels/BayesianELUN1.py" />
     <entry file="file://$PROJECT_DIR$/main_NonBayes.py" />
     <entry file="file://$PROJECT_DIR$/extraction/loss_different_lr.py" />
-    <entry file="file://$PROJECT_DIR$/extraction/extract_loss.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="9" lean-forward="true" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/extraction/extract_loss.py" />
     <entry file="file://$PROJECT_DIR$/extraction/acc_architecture.py" />
-    <entry file="file://$PROJECT_DIR$/extraction/extract_acc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="120" selection-end-column="35" />
+    <entry file="file://$PROJECT_DIR$/extraction/extract_acc.py" />
+    <entry file="file://$PROJECT_DIR$/data/cifar-100-python/test" />
+    <entry file="file://$PROJECT_DIR$/data/stl10_binary/class_names.txt" />
+    <entry file="file://$PROJECT_DIR$/data/stl10_binary/fold_indices.txt" />
+    <entry file="file://$PROJECT_DIR$/utils/BayesianModels/BayesianLeNet.py" />
+    <entry file="file://$PROJECT_DIR$/utils/NonBayesianModels/resnet.py" />
+    <entry file="file://$PROJECT_DIR$/utils/BayesianDataParallel/BBBDataParallel.py" />
+    <entry file="file://$PROJECT_DIR$/utils/BayesianModels/BayesianAlexNet.py" />
+    <entry file="file://$PROJECT_DIR$/utils/BBBlayers.py" />
+    <entry file="file://$PROJECT_DIR$/../../../envs/torch0.4/lib/python3.6/posixpath.py" />
+    <entry file="file://$PROJECT_DIR$/utils/autoaugment.py" />
+    <entry file="file://$PROJECT_DIR$/utils/NonBayesianModels/ThreeConvThreeFC.py" />
+    <entry file="file://$PROJECT_DIR$/utils/NonBayesianModels/LeNet.py" />
+    <entry file="file://$PROJECT_DIR$/utils/BayesianModels/Bayesian3Conv3FC.py" />
+    <entry file="file://$PROJECT_DIR$/utils/NonBayesianModels/AlexNet.py" />
+    <entry file="file://$PROJECT_DIR$/bayesian_config.py" />
+    <entry file="file://$PROJECT_DIR$/utils/BayesianModels/BayesianResNet.py" />
+    <entry file="file://$PROJECT_DIR$/main_nonBayes.py" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/cifar-100-python/test">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="-7778" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/stl10_binary/class_names.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/stl10_binary/fold_indices.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/BayesianModels/BayesianLeNet.py">
+    <entry file="file://$PROJECT_DIR$/datasets.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="38" column="47" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/NonBayesianModels/resnet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="2175">
+          <caret line="96" column="66" selection-start-line="96" selection-start-column="66" selection-end-line="96" selection-end-column="66" />
           <folding>
-            <element signature="e#0#12#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/BayesianDataParallel/BBBDataParallel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/BayesianModels/BayesianAlexNet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-136">
-          <caret line="10" column="30" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="30" />
-          <folding>
-            <element signature="e#1#22#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/BBBlayers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="60" column="20" lean-forward="true" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../envs/torch0.4/lib/python3.6/posixpath.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/autoaugment.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="868">
-          <caret line="230" column="18" selection-start-line="230" selection-start-column="18" selection-end-line="230" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/NonBayesianModels/ThreeConvThreeFC.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/NonBayesianModels/LeNet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="48" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/BayesianModels/Bayesian3Conv3FC.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="51" column="18" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/NonBayesianModels/AlexNet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="58" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bayesian_config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/utils/BBBdistributions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="989">
-          <caret line="97" column="24" selection-start-line="97" selection-start-column="6" selection-end-line="97" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/BayesianModels/BayesianResNet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="88" column="38" selection-start-line="88" selection-start-column="38" selection-end-line="88" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main_nonBayes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="28" column="76" selection-start-line="28" selection-start-column="76" selection-end-line="28" selection-end-column="76" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main_Bayes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="43" />
+        <state relative-caret-position="-996">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="40" column="18" lean-forward="true" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+        <state relative-caret-position="116">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_Bayes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="683">
+          <caret line="102" column="19" lean-forward="true" selection-start-line="102" selection-start-column="19" selection-end-line="102" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

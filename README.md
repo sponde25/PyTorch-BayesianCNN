@@ -1,39 +1,49 @@
-# Bayesian CNN with Variational Inference and it's application
+# Bayesian CNN with Variational Inference for Image Recognition task
 
-In this repo **Bayesian Convolutional Neural Network (BayesCNN) using Variational Inference** is proposed, that introduces probability distribution over the weights. Furthermore, the proposed BayesCNN architecture is applied to tasks like **Image Classification, Image Super-Resolution and Generative Adversarial Networks**.
-
-BayesCNN is based on **Bayes by Backprop** which derives a variational approximation to the true posterior. 
-Our proposed method not only achieves performances equivalent to frequentist inference in identical architectures but also incorporate a measurement for uncertainties and regularisation. It further eliminates the use of dropout in the model. Moreover, we predict how certain the model prediction is based on the epistemic and aleatoric uncertainties and finally, we propose ways to prune the Bayesian architecture and to make it more computational and time effective. 
+We introduce **Bayesian convolutional neural networks with variational inference**, a variant of convolutional neural networks (CNNs), in which the intractable posterior probability distributions over weights are inferred by **Bayes by Backprop**. We demonstrate how our proposed variational inference method achieves performances equivalent to frequentist inference in identical architectures on several datasets (MNIST, CIFAR10, CIFAR100), while the two desiderata, a measure for uncertainty and regularization are incorporated naturally. We examine in detail how this measure for uncertainty, namely the predictive variance, can be decomposed into aleatoric and epistemic uncertainties. 
 
 ---------------------------------------------------------------------------------------------------------
 
-## Folder Structure and Content
 
-### Image Recognition
+### Filter weight distributions in a Bayesian Vs Frequentist approach
 
-*   The Bayesian CNN is applied to the task of Image Recognition and the results are compared to frequentist architectures for MNIST, CIFAR10 and CIFAR100 datasets. 
-
-*   A measure of uncertainty is added with the prediction and the epistemic and aleatoric uncertainty is estimated.
-
-*   Bayesian AlexNet, LeNet and 3Conv3FC is proposed and applied to Image recognition tasks. 
-
-*   Code and implementation details available at: [Bayesian CNN Image Recognition](https://github.com/kumar-shridhar/PyTorch-BayesianCNN/tree/master/Image%20Recognition)
+![Distribution over weights in a CNN's filter.](figures/BayesCNNwithdist.png)
 
 ---------------------------------------------------------------------------------------------------------
 
-### Super Resolution
+### Fully Bayesian perspective of an entire CNN 
 
-*   Bayesian CNN is applied to the task of Super Resolution on BSD300 dataset and the results are compared to other methods.
-
-*   Implementation and code is available here : [PyTorch Bayesian Super Resolution](https://github.com/kumar-shridhar/PyTorch-BayesianCNN/tree/master/Super%20Resolution) 
+![Distributions must be over weights in convolutional layers and weights in fully-connected layers.](figures/CNNwithdist_git.png)
 
 ---------------------------------------------------------------------------------------------------------
 
-### Paper
+## Results 
 
-*   Paper contains the paper about the Bayesian CNN with Variational Inference. The paper is also available on Arxiv: [Bayeisan CNN with Variational Inference](https://arxiv.org/abs/1806.05978)
+### Results on MNIST and CIFAR 10 dataset
 
-*   Feel free to cite the author, if the work is any help to you:
+![Table showing MNIST and CIFAR10 results](figures/CIFAR10MNISTTable.png)
+
+![Result on MNIST dataset with AlexNet and LeNet](results/plots/results_mnist.png)
+
+![Result on CIFAR10 dataset with AlexNet and LeNet](results/plots/results_cifar10.png)
+
+---------------------------------------------------------------------------------------------------------
+
+
+### Results on CIFAR100 dataset
+
+![Table showing CIFAR100 results](figures/CIFAR100Table.png)
+
+![Result on CIFAR100 dataset with AlexNet and LeNet](results/plots/results_cifar100.png)
+
+--------------------------------------------------------------------------------------------------------
+
+### Uncertainty Estimation
+
+![Uncertainty Estimation on LeNet5](figures/Uncertainty.png)
+
+
+If you are using this work, please cite:
 
 ```
 @article{shridhar2018bayesian,
@@ -44,19 +54,4 @@ Our proposed method not only achieves performances equivalent to frequentist inf
 }
 ```
 
----------------------------------------------------------------------------------------------------------
-
-### Thesis
-
-* Thesis contains the detailed explaination of all the concepts mentioned from background knowledge to empirical analysis and conclusion. 
-
-* Thesis chapters overview is available here: [Master Thesis BayesianCNN](https://github.com/kumar-shridhar/Master-Thesis-BayesianCNN)
-
----------------------------------------------------------------------------------------------------------
-
-### Contact
-
-*   shridhar.stark@gmail.com
-
----------------------------------------------------------------------------------------------------------
-
+--------------------------------------------------------------------------------------------------------
